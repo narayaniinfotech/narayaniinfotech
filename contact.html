@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Narayani Infotech - Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://sawant-infotech.github.io/narayaniinfotech/source/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://sawant-infotech.github.io/narayaniinfotech/source/css/style.css" rel="stylesheet">
+    <link href="https://sawant-infotech.github.io/narayaniinfotech/source/css/docs.css" rel="stylesheet">
+    <link href="https://sawant-infotech.github.io/narayaniinfotech/source/css/animate.min.css" rel="stylesheet">
+    <script src="https://sawant-infotech.github.io/narayaniinfotech/source/js/bootstrap.bundle.min.js"></script>
+    <script src="https://sawant-infotech.github.io/narayaniinfotech/source/js/jquery.min.js"></script>
+    <script src="https://sawant-infotech.github.io/narayaniinfotech/source/js/index.js"></script>
+    <script src="https://sawant-infotech.github.io/narayaniinfotech/source/js/icon.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="source/favicon.ico">
+    <!-- social media -->
+    <meta property="og:title" content="Narayani Infotech" />
+    <meta property="og:description" content="Complete Your IT Resources" />
+    <meta property="og:image" content="source/logo.png" />
+    <style>
+
+    </style>
+</head>
+<body class="p-0 m-0" id="myBody">
+    <!-- ? Preloader Start -->
+    <section id="display-preloader">
+        <script>displayPreloader("display-preloader")</script>
+    </section>
+    <!-- ? Preloader end-->
+    <section id="display-navbar"><!-- dynamically add navbar --></section>
+    <!-- 24x7 support -->
+    <div class="container-fluid">
+        <section id="display-24x7-support"><!-- dynamically add--></section>
+    </div>
+    <!-- 24x7 support end -->
+    <!-- slider get a call back -->
+    <section>
+        <div class="container-fluid">
+            <section id="display_getCallBackSlider"></section>
+        </div>
+    </section>
+    <!-- silder end -->
+    <section id="display-contact-us-forms"><!-- dynamically add --></section>
+    <!-- fotter -->
+    <div class="container-fluid m-0 ps-0 pe-0 pt-0 pb-3 bg-dark">
+        <section id="footer_display"><!-- dynamically add footer--></section>
+    </div>
+    <!-- fotter end -->
+    <!-- go to top on screen button -->
+    <div class="position-fixed bottom-0 end-0 p-3" id="goToTop" style="z-index: 99999999999;">
+        <button class="btn btn-secondary" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+        <script>
+            function scrollToTop() {
+                window.scrollTo(0, 0);
+            }
+        </script>
+    </div>
+    <!-- go to top END-->
+    <script>
+        navbarDisplay("display-navbar", "contact.html"); // 1Para- where code can add ; 2Para - active page
+        _24x7Display("display-24x7-support");
+        getCallBackSliderDisplay("display_getCallBackSlider");
+        contactUsFormDisplay("display-contact-us-forms"); // contact forms
+        
+        footerDisplay('footer_display');
+
+        officeMobileDisplay("office_mobile_display1"); //  get a call back slider
+        officeMailDisplay("office_mail_display1");//  get a call back slider
+
+        officeMailDisplay("office_mail_display4"); // contact us or form details
+        officeMobileDisplay("office_mobile_display4"); // contact us or form details
+        officeAddressDisplay("office_address_display3"); // contact us or form details
+
+        officeMailDisplay("office_mail_display3"); // footer
+        officeMobileDisplay("office_mobile_display3"); // footer
+        officeAddressDisplay("office_address_display2"); // footer
+
+        fillFormData('getCallBack'); // fill forms data function
+        fillFormData('contactSaleForm'); // fill forms data function
+        fillFormData('contactSupportForm'); // fill forms data function
+        fillFormData('newsletterForm'); // fill forms data function
+        
+        stopPreloader(); // stop preloader
+
+        chekWebsite();
+    </script>
+</body>
+
+</html>

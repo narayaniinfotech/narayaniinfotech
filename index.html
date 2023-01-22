@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Narayani Infotech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://sawant-infotech.github.io/narayaniinfotech/source/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://sawant-infotech.github.io/narayaniinfotech/source/css/style.css" rel="stylesheet">
+    <link href="https://sawant-infotech.github.io/narayaniinfotech/source/css/docs.css" rel="stylesheet">
+    <link href="https://sawant-infotech.github.io/narayaniinfotech/source/css/animate.min.css" rel="stylesheet">
+    <script src="https://sawant-infotech.github.io/narayaniinfotech/source/js/bootstrap.bundle.min.js"></script>
+    <script src="https://sawant-infotech.github.io/narayaniinfotech/source/js/jquery.min.js"></script>
+    <script src="https://sawant-infotech.github.io/narayaniinfotech/source/js/index.js"></script>
+    <script src="https://sawant-infotech.github.io/narayaniinfotech/source/js/icon.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="source/favicon.ico">
+    <!-- social media -->
+    <meta property="og:title" content="Narayani Infotech" />
+    <meta property="og:description" content="Complete Your IT Resources" />
+    <meta property="og:image" content="source/logo.png" />
+</head>
+
+<body class="p-0 m-0" id="myBody">
+    <!-- ? Preloader Start -->
+    <section id="display-preloader">
+        <script>displayPreloader("display-preloader")</script>
+    </section>
+    <!-- ? Preloader end-->
+    <section id="display-navbar"><!-- dynamically add navbar --></section>
+    <section id="display-carousal"><!-- dynamically add carousal --></section>
+    <!-- boost pc tag -->
+    <section id="boost-pc-tag-1"><!-- dynamically add --></section>
+    <!-- boost pc tag -->
+    <div class="container-fluid">
+        <section id="display-mail-goal"><!-- DYNAMICALLY ADD main goal --></1--></section>
+    </div>
+    <div class="w-100 d-flex justify-content-center m-0 p-0 ">
+        <hr class="hr w-50">
+    </div>
+    <!-- our services -->
+    <section id="display-services"></section>
+    <!-- our services end-->
+    <!-- slider get a call back -->
+    <section id="display_getCallBackSlider"></section>
+    <!-- silder end -->
+    <!-- need Consultation  -->
+    <section id="display-need-consutation"></section>
+    <!-- need Consultation  end -->
+    <!-- 24x7 support -->
+    <div class="container-fluid">
+        <section id="display-24x7-support"><!-- dynamically add--></section>
+    </div>
+    <!-- 24x7 support end -->
+    <!-- quote notification  -->
+    <section>
+        <div class="alert alert-secondary alert-dismissible fade show mt-3 mb-3 ms-lg-5 me-lg-5 quote-xs-padding"
+            role="alert">
+            <b>Narayani Infotech</b> is a one-stop-shop for all of your IT needs, offering a wide range of services and
+            a
+            team of
+            skilled professionals to help you succeed in the digital world.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </section>
+    <!-- boost pc tag -->
+    <section id="boost-pc-tag-2"><!-- dynamically add --></section>
+    <!-- boost pc tag -->
+    <!-- our customer says -->
+    <section id="customers-comments-section">
+        <!-- Comments here through js -->
+    </section>
+    </div>
+    <!-- fotter -->
+    <div class="container-fluid m-0 ps-0 pe-0 pt-0 pb-3 bg-dark">
+        <section id="footer_display"><!-- dynamically add footer--></section>
+    </div>
+    <!-- fotter end -->
+    <!-- go to top on screen button -->
+    <div class="position-fixed bottom-0 end-0 p-3" id="goToTop" style="z-index: 99999999999;">
+        <button class="btn btn-secondary" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+        <script>
+            function scrollToTop() {
+                window.scrollTo(0, 0);
+            }
+        </script>
+    </div>
+    <!-- go to top END-->
+    <script>
+        navbarDisplay("display-navbar", "index.html"); // 1Para- where code can add ; 2Para - active page
+        carousalDisplay("display-carousal");
+        
+        boostPcTag("boost-pc-tag-1"); // boost pc tag line -1
+        boostPcTag("boost-pc-tag-2"); // boost pc tag line -2
+
+        mainGoalDisplay("display-mail-goal");
+        serviceCardsDisplay("display-services")
+        _24x7Display("display-24x7-support");
+        getCallBackSliderDisplay("display_getCallBackSlider");
+        needConsultationDisplay("display-need-consutation");
+        commentsDisplay('customers-comments-section');
+        footerDisplay('footer_display');
+
+        officeMobileDisplay("office_mobile_display1"); //  get a call back slider
+        officeMailDisplay("office_mail_display1");//  get a call back slider
+
+        officeAddressDisplay("office_address_display1");// this in need concelation
+        officeMobileDisplay("office_mobile_display2");// this in need concelation
+        officeMailDisplay("office_mail_display2");// this in need concelation    
+
+        officeMailDisplay("office_mail_display3"); // footer
+        officeMobileDisplay("office_mobile_display3"); // footer
+        officeAddressDisplay("office_address_display2"); // footer
+
+        fillFormData('needConsultation'); // fill forms data function
+        fillFormData('getCallBack'); // fill forms data function
+        fillFormData('newsletterForm'); // fill forms data function
+
+        stopPreloader(); // stop preloader
+        chekWebsite(); 
+    </script>
+</body>
+</html>
